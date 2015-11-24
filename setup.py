@@ -29,7 +29,7 @@ setup(
     ],
     install_requires=[
         'requests>=2,<3',
-        'requests_mock==0.6.0',
+        'requests_mock==0.7.0',
         'unittest2==1.1.0'
     ],
     setup_requires=[
