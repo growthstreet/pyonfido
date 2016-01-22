@@ -26,7 +26,7 @@ class Documents(ApiResource):
 
         files = {
             "file": (document_filename, document,
-                     mimetypes.types_map[extension])
+                     mimetypes.types_map[extension.lower()])
         }
 
         return self.post("applicants/{0}/documents/".format(applicant_id),
